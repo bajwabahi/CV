@@ -15,10 +15,11 @@
             <a href="#contact">Contact</a>
 
         </nav>
+        <div itemscope itemtype="https://schema.org/Person">
         <div class="content-wrap">
-            <img class="profile-img column-narrow" id="profile" src="img/elon.jpg" alt="Ahmed's Profile">
+            <img class="profile-img column-narrow" id="profile" src="img/elon.jpg" itemprop="image" alt="usama's Profile">
             <div class="column-wide">
-                <h1>Muhammad Usama</h1>
+                <span itemprop="name"><h1>Muhammad Usama</h1></span>
                 <h2>FullStack Web Developer</h2>
                 <p>I'm a website designer and developer with extensive experience in building high-quality sites.
 
@@ -26,12 +27,13 @@
                 </p>
             </div>
         </div>
+        </div>
     </header>
     
     <main> 
         <section class="work" id="experience">
             <div class="content-wrap">
-                <h2>Work Experience</h2>
+                <span itemprop="jobTitle"><h2>Work Experience</h2></span>
 
                 <div class="column-narrow">
                     <h3>Fullstack Web Developer</h3>
@@ -116,7 +118,10 @@
         
         <section class="education" id="education">
             <div class="content-wrap">
+                 <div itemprop="education" itemscope itemtype="https://schema.org/education">
+    <span itemprop="education">
                 <h2>Education</h2>
+                     </span>
 
                 <h3>Punjab convocational program -Lahore</h3>
                 <h4>Computer Science Hub, 2020</h4>
@@ -131,25 +136,31 @@
                 <p>Three months of general studies.</p>
                 <!-- End of school details. -->
             </div>
+            </div>
         </section>
     </main>
     
     <!-- // Footer & contact info -->
     <footer>
         <div class="content-wrap" id="contact">
+             <div itemprop="contact" itemscope itemtype="https://schema.org/contact">
+    <span itemprop="contact">
             <h2>Let's Keep in Touch!</h2>
+                 </span>
 
             <!-- Social media and contact links. Add or remove any networks. -->
             <div>
-                <a href="https://www.gmail.com" target="_blank"><i class="fa fa-at" aria-hidden="true"></i><span class="sr-only" >MyWebsite</span></a>
+                <a href="https://www.gmail.com" target="_blank"><i class="fa fa-at" aria-hidden="true"></i><span class="sr-only" itemprop="email">MyWebsite</span></a>
                 <a href="https://www.youtube.com" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i><span class="sr-only" >MyWebsite</span></a>
                 <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><span class="sr-only" >twitter</span></a>
-                <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i><span class="sr-only" >Linkedin</span></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i><span class="sr-only" itemprop="url">Linkedin</span></a>
                 <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i><span class="sr-only" >Facebook</span></a>
             </div>
 
             <p>Copyright 2018 - 2022 by Bajwa</p>
        </div>
+        </div>
     </footer>
+    
 </body>
 </html>
